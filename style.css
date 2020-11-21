@@ -20,6 +20,125 @@ Font size: 15px
 Weights: 400, 500, 700
 */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+}
+
+.main-container {
+  height: 100vh;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  margin-bottom: 6rem;
+  display: flex;
+}
+
+.hero {
+  flex-basis: 50%;
+  padding-right: 4.5rem;
+}
+
+.headline {
+  margin-bottom: 1.5rem;
+  color: hsl(300, 43%, 22%);
+  line-height: 1;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.hero-text {
+  color: hsl(303, 10%, 53%);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.rating-container {
+  flex-basis: 50%;
+}
+
+.rating {
+  margin: 1.5rem;
+  border-radius: 7px;
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  color: hsl(300, 43%, 22%);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stars {
+  padding: 0 1.5rem;
+}
+
+.rating-text {
+  padding: 0 1.5rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: hsl(300, 43%, 22%);
+  padding: 4rem;
+  color: hsl(300, 24%, 96%);
+}
+
+.card-top {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.thumbnail {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  /* display: block; */
+  width: 100%;
+}
+
+.card-headline {
+  padding-left: 2rem;
+}
+
+.name {
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.card-text {
+  line-height: 1.7;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
