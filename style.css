@@ -31,13 +31,19 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
   font-family: "Spartan", sans-serif;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-container {
-  height: 100vh;
-  padding: 10vh 10vw;
+  padding: 15vh 10vw;
   display: flex;
   flex-direction: column;
 }
@@ -49,7 +55,7 @@ body {
 
 .hero {
   flex-basis: 50%;
-  padding-right: 4.5rem;
+  padding-right: 9rem;
 }
 
 .headline {
@@ -71,7 +77,9 @@ body {
 }
 
 .rating {
+  width: calc(100% - 9rem);
   margin: 1.5rem;
+  margin-left: 0;
   border-radius: 7px;
   background-color: hsl(300, 24%, 96%);
   display: flex;
@@ -80,6 +88,14 @@ body {
   color: hsl(300, 43%, 22%);
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.rating:nth-of-type(2) {
+  margin-left: 4.5rem;
+}
+
+.rating:nth-of-type(3) {
+  margin-left: 9rem;
 }
 
 .stars {
@@ -95,10 +111,23 @@ body {
 }
 
 .card {
+  height: min-content;
   border-radius: 8px;
   background-color: hsl(300, 43%, 22%);
   padding: 4rem;
   color: hsl(300, 24%, 96%);
+}
+
+.card-container > * + * {
+  margin-left: 3rem;
+}
+
+.card:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+
+.card:nth-of-type(3) {
+  margin-top: 3rem;
 }
 
 .card-top {
@@ -140,7 +169,9 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  margin-top: auto;
+  padding-bottom: 1.1rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
